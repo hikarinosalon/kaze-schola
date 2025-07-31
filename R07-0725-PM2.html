@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>令和7年7月25日午後2時の部　オンラインミーティング　概要</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #0f0f23;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: #0f0f23;
+            border-bottom: 2px solid #d0d7de;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+        
+        h2 {
+            color: #0f0f23;
+            border-bottom: 1px solid #d0d7de;
+            padding-bottom: 8px;
+            margin: 30px 0 15px 0;
+            font-size: 1.4rem;
+        }
+        
+        h3 {
+            color: #0f0f23;
+            margin: 20px 0 10px 0;
+            font-size: 1.2rem;
+        }
+        
+        h4 {
+            color: #0f0f23;
+            margin: 15px 0 8px 0;
+            font-size: 1.1rem;
+        }
+        
+        h5 {
+            color: #0f0f23;
+            margin: 12px 0 6px 0;
+            font-size: 1.0rem;
+        }
+        
+        p {
+            margin-bottom: 12px;
+        }
+        
+        ul, ol {
+            margin: 10px 0 15px 20px;
+        }
+        
+        li {
+            margin-bottom: 5px;
+        }
+        
+        .session-info {
+            background-color: #f6f8fa;
+            border: 1px solid #d0d7de;
+            border-radius: 6px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        
+        .warning-box {
+            background-color: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 6px;
+            padding: 12px;
+            margin: 15px 0;
+        }
+        
+        .info-box {
+            background-color: #e7f3ff;
+            border: 1px solid #b6d7ff;
+            border-radius: 6px;
+            padding: 12px;
+            margin: 15px 0;
+        }
+        
+        .success-box {
+            background-color: #dcfce7;
+            border: 1px solid #bbf7d0;
+            border-radius: 6px;
+            padding: 12px;
+            margin: 15px 0;
+        }
+        
+        .danger-box {
+            background-color: #ffeaea;
+            border: 1px solid #ffcccc;
+            border-radius: 6px;
+            padding: 12px;
+            margin: 15px 0;
+        }
+        
+        .critical-box {
+            background-color: #ffe0e0;
+            border: 2px solid #ff4d4d;
+            border-radius: 6px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        
+        blockquote {
+            border-left: 4px solid #d0d7de;
+            padding-left: 15px;
+            margin: 15px 0;
+            color: #656d76;
+            font-style: italic;
+        }
+        
+        strong {
+            font-weight: 600;
+            color: #0f0f23;
+        }
+        
+        .date-stamp {
+            text-align: right;
+            color: #656d76;
+            font-size: 0.9rem;
+            margin-top: 30px;
+            border-top: 1px solid #d0d7de;
+            padding-top: 15px;
+        }
+        
+        .toc {
+            background-color: #f6f8fa;
+            border: 1px solid #d0d7de;
+            border-radius: 6px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        
+        .toc ul {
+            margin-left: 10px;
+        }
+        
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        
+        .comparison-table th {
+            background-color: #f6f8fa;
+            border: 1px solid #d0d7de;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+        }
+        
+        .comparison-table td {
+            border: 1px solid #d0d7de;
+            padding: 12px;
+            vertical-align: top;
+        }
+        
+        .person-section {
+            border-left: 3px solid #0969da;
+            padding-left: 15px;
+            margin: 20px 0;
+        }
+        
+        .highlight {
+            background-color: #fff8dc;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+        
+        .method-box {
+            background-color: #f0f9ff;
+            border: 1px solid #bae6fd;
+            border-radius: 6px;
+            padding: 12px;
+            margin: 15px 0;
+        }
+        
+        .rest-box {
+            background-color: #fef3e2;
+            border: 1px solid #f59e0b;
+            border-radius: 6px;
+            padding: 12px;
+            margin: 15px 0;
+        }
+        
+        .healing-box {
+            background-color: #f5f3ff;
+            border: 1px solid #a855f7;
+            border-radius: 6px;
+            padding: 12px;
+            margin: 15px 0;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+                margin: 10px;
+            }
+            
+            h1 {
+                font-size: 1.5rem;
+            }
+            
+            h2 {
+                font-size: 1.3rem;
+            }
+            
+            .comparison-table {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>令和7年7月25日午後2時の部　オンラインミーティング　概要</h1>
+
+        <div class="toc">
+            <strong>目次</strong>
+            <ul>
+                <li><a href="#session-record">セッション記録（完全簡潔版）</a></li>
+                <li><a href="#main-theme">メインテーマ：夏至後の排毒期における体調変化への対応</a></li>
+                <li><a href="#countermeasures">具体的対処法</a></li>
+                <li><a href="#individual-sessions">個別セッション</a></li>
+                <li><a href="#guidance">全体的な指導とアドバイス</a></li>
+            </ul>
+        </div>
+
+        <h2 id="session-record">セッション記録（完全簡潔版）</h2>
+
+        <h2 id="main-theme">メインテーマ</h2>
+        <h3>夏至後の排毒期における体調変化への対応</h3>
+        
+        <div class="info-box">
+            先月の夏至以降、地球のサイクル変化により体の排毒モードが始まっている。太陽の表面活動が活発化し、今まで溜め込んでいた毒素やエネルギーが動き出す時期。些細な症状でも大きな変化の前兆として注意が必要。
+        </div>
+
+        <h2 id="countermeasures">具体的対処法</h2>
+
+        <h3>基本方針：絶対安静</h3>
+        
+        <div class="rest-box">
+            <ul>
+                <li><span class="highlight"><strong>最優先</strong></span>：とにかく休む、ぐっすり眠る</li>
+                <li>眠たいだけ眠る（昼寝推奨）</li>
+                <li>暑い日は外出を避け、自宅でゆっくり過ごす</li>
+                <li>入院レベル7-8の安静が必要と考える</li>
+            </ul>
+        </div>
+
+        <h3>症状別対応</h3>
+        
+        <table class="comparison-table">
+            <thead>
+                <tr>
+                    <th>症状</th>
+                    <th>原因</th>
+                    <th>対処法</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>呼吸器系の症状（咳など）</strong></td>
+                    <td>肺の問題ではなく自律神経の乱れ<br>胸部周辺の臓器全体の疲労蓄積</td>
+                    <td>血流改善：ブドウジュース（ウェルチ）を薄めて<br>1日2-3杯</td>
+                </tr>
+                <tr>
+                    <td><strong>頭痛・目の疲れ</strong></td>
+                    <td>血流不良</td>
+                    <td>ポリフェノール摂取<br>（ブドウジュース、ココア）<br>血流促進が重要</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>推奨する過ごし方</h3>
+        
+        <div class="success-box">
+            <ul>
+                <li>長編時代劇やドラマを見ながら休息</li>
+                <li>古い作品推奨（現代作品は精神的負担あり）</li>
+                <li>孤独のグルメ、必殺仕掛人など</li>
+                <li>韓国ドラマなど200話レベルの長編作品</li>
+            </ul>
+        </div>
+
+        <h2 id="individual-sessions">個別セッション</h2>
+
+        <div class="person-section">
+            <h3>Sさんの症状と対応</h3>
+            
+            <h4>症状</h4>
+            <ul>
+                <li>1ヶ月続く強い咳</li>
+                <li>風邪後の薬を止めても咳のみ継続</li>
+                <li>血圧は改善傾向</li>
+            </ul>
+
+            <div class="method-box">
+                <h4><strong>指導内容</strong></h4>
+                <ul>
+                    <li>体の自己浄化プロセスとして理解</li>
+                    <li>無理な活動を控え、完全休息モード</li>
+                    <li>症状変化を1週間単位で観察</li>
+                    <li>辛い場合は素直に受診・薬物療法も可</li>
+                </ul>
+            </div>
+
+            <h4>推奨食材</h4>
+            <ul>
+                <li>ゴーヤ、キュウリ、トマト栽培で達成感を得る</li>
+                <li>読書で精神的充実</li>
+            </ul>
+        </div>
+
+        <div class="person-section">
+            <h3>S.Nさんの症状と対応</h3>
+            
+            <h4>症状</h4>
+            <ul>
+                <li>強い不安感（叔父の移住話がきっかけ）</li>
+                <li>自己否定的思考の増加</li>
+                <li>睡眠不足</li>
+                <li>頭部マッサージ時の凝り（耳後ろ）</li>
+                <li>股関節の硬さ（最重要警告サイン）</li>
+            </ul>
+
+            <div class="critical-box">
+                <h4><strong>指導内容</strong></h4>
+                <ul>
+                    <li><strong>股関節硬化は内臓冷えの前兆、腰痛リスク大</strong></li>
+                    <li>毎日のストレッチ必須（維持が目標）</li>
+                    <li>不安は過去の未処理感情の噴出（好転反応）</li>
+                    <li>オブラート100枚重なった感情の解放プロセス</li>
+                </ul>
+            </div>
+
+            <h4>グラウンディング対策</h4>
+            <div class="method-box">
+                <ul>
+                    <li>ネガティブエネルギーは腰から下に落とす</li>
+                    <li>湿布、呼吸法、エネルギーワーク</li>
+                    <li>可能なら裸足で芝生、家での裸足生活</li>
+                </ul>
+            </div>
+
+            <div class="healing-box">
+                <h4><strong>癒しの方法</strong></h4>
+                <h5><strong>バニラの香り</strong>（女性の体質的特徴）</h5>
+                <ul>
+                    <li>シュークリーム、ソフトクリーム、バニラエッセンス</li>
+                    <li>メロンパンなども効果的</li>
+                </ul>
+            </div>
+
+            <h4>人間関係（苦手な友人）</h4>
+            <div class="info-box">
+                <ul>
+                    <li>マングースと蛇の関係性（相性の問題）</li>
+                    <li>自分の反応速度が早すぎる緊張状態</li>
+                    <li><strong>対策</strong>：コーヒーゼリー、メロンソーダなど甘いもので緊張緩和</li>
+                    <li>極度の緊張時こそ甘いものの効果大</li>
+                </ul>
+            </div>
+
+            <h4>孤独感への対応</h4>
+            <div class="success-box">
+                <ul>
+                    <li>現在の一人時間は自然な流れ</li>
+                    <li>無理に人付き合いを増やす必要なし</li>
+                    <li>種まき（大根、かぶなど）で小さな達成感</li>
+                    <li>卵かけご飯など単純な食事の喜び再発見</li>
+                </ul>
+            </div>
+        </div>
+
+        <h2 id="guidance">全体的な指導とアドバイス</h2>
+
+        <h3>感情の取り扱い</h3>
+        
+        <div class="info-box">
+            <ul>
+                <li>過去の未処理感情（薄いオブラート状）の蓄積が現在の不調原因</li>
+                <li>一枚一枚は軽微だが、蓄積により感覚を鈍らせている</li>
+                <li>子供時代の純粋な感動を取り戻すプロセス</li>
+            </ul>
+        </div>
+
+        <h3>成仏について</h3>
+        
+        <div class="method-box">
+            <ul>
+                <li>生きているうちに成仏することの重要性</li>
+                <li>高齢者の「成仏していない」話は自分の不安の投影</li>
+                <li>人生の悔いを残さない生き方</li>
+            </ul>
+        </div>
+
+        <h3>工夫の必要性</h3>
+        
+        <div class="warning-box">
+            <ul>
+                <li>内面的課題を乗り越える工夫が必須の時代</li>
+                <li>現実的な大きな問題がない恵まれた状況</li>
+                <li>小さな喜び（甘いもの、栽培、香り）を活用した感情管理</li>
+            </ul>
+        </div>
+
+        <h3>男女差のある癒し方法</h3>
+        
+        <table class="comparison-table">
+            <thead>
+                <tr>
+                    <th>性別</th>
+                    <th>効果的な癒し方法</th>
+                    <th>特徴</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>女性</strong></td>
+                    <td>バニラ、メロン系の香りで本能的癒し効果</td>
+                    <td>穏やかで持続的な効果</td>
+                </tr>
+                <tr>
+                    <td><strong>男性</strong></td>
+                    <td>釣り、パチンコ、サウナ＋冷水＋ビールなど刺激的体験が必要</td>
+                    <td>強い刺激による短期集中型の効果</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <blockquote>
+            夏至後の排毒期は、体が自然に浄化を行っている重要な時期である。症状を抑え込むのではなく、十分な休息と適切な栄養摂取により、この自然なプロセスをサポートすることが最も重要である。
+        </blockquote>
+
+        <div class="date-stamp">
+            令和7年7月25日
+        </div>
+    </div>
+</body>
+</html>

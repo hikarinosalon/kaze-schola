@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>風のスコラ セッション記録（完全簡潔版）</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #0f0f23;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: #0f0f23;
+            border-bottom: 2px solid #d0d7de;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+        
+        h2 {
+            color: #0f0f23;
+            border-bottom: 1px solid #d0d7de;
+            padding-bottom: 8px;
+            margin: 30px 0 15px 0;
+            font-size: 1.4rem;
+        }
+        
+        h3 {
+            color: #0f0f23;
+            margin: 20px 0 10px 0;
+            font-size: 1.2rem;
+        }
+        
+        h4 {
+            color: #0f0f23;
+            margin: 15px 0 8px 0;
+            font-size: 1.1rem;
+        }
+        
+        h5 {
+            color: #0f0f23;
+            margin: 12px 0 6px 0;
+            font-size: 1.0rem;
+        }
+        
+        p {
+            margin-bottom: 12px;
+        }
+        
+        ul, ol {
+            margin: 10px 0 15px 20px;
+        }
+        
+        li {
+            margin-bottom: 5px;
+        }
+        
+        .session-info {
+            background-color: #f6f8fa;
+            border: 1px solid #d0d7de;
+            border-radius: 6px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        
+        .warning-box {
+            background-color: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 6px;
+            padding: 12px;
+            margin: 15px 0;
+        }
+        
+        .info-box {
+            background-color: #e7f3ff;
+            border: 1px solid #b6d7ff;
+            border-radius: 6px;
+            padding: 12px;
+            margin: 15px 0;
+        }
+        
+        .success-box {
+            background-color: #dcfce7;
+            border: 1px solid #bbf7d0;
+            border-radius: 6px;
+            padding: 12px;
+            margin: 15px 0;
+        }
+        
+        .danger-box {
+            background-color: #ffeaea;
+            border: 1px solid #ffcccc;
+            border-radius: 6px;
+            padding: 12px;
+            margin: 15px 0;
+        }
+        
+        .critical-box {
+            background-color: #ffe0e0;
+            border: 2px solid #ff4d4d;
+            border-radius: 6px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        
+        blockquote {
+            border-left: 4px solid #d0d7de;
+            padding-left: 15px;
+            margin: 15px 0;
+            color: #656d76;
+            font-style: italic;
+        }
+        
+        strong {
+            font-weight: 600;
+            color: #0f0f23;
+        }
+        
+        .date-stamp {
+            text-align: right;
+            color: #656d76;
+            font-size: 0.9rem;
+            margin-top: 30px;
+            border-top: 1px solid #d0d7de;
+            padding-top: 15px;
+        }
+        
+        .toc {
+            background-color: #f6f8fa;
+            border: 1px solid #d0d7de;
+            border-radius: 6px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        
+        .toc ul {
+            margin-left: 10px;
+        }
+        
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        
+        .comparison-table th {
+            background-color: #f6f8fa;
+            border: 1px solid #d0d7de;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+        }
+        
+        .comparison-table td {
+            border: 1px solid #d0d7de;
+            padding: 12px;
+            vertical-align: top;
+        }
+        
+        .person-section {
+            border-left: 3px solid #0969da;
+            padding-left: 15px;
+            margin: 20px 0;
+        }
+        
+        .highlight {
+            background-color: #fff8dc;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+        
+        .spiritual-section {
+            border-left: 3px solid #9d4edd;
+            padding-left: 15px;
+            margin: 20px 0;
+        }
+        
+        .method-box {
+            background-color: #f0f9ff;
+            border: 1px solid #bae6fd;
+            border-radius: 6px;
+            padding: 12px;
+            margin: 15px 0;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+                margin: 10px;
+            }
+            
+            h1 {
+                font-size: 1.5rem;
+            }
+            
+            h2 {
+                font-size: 1.3rem;
+            }
+            
+            .comparison-table {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>風のスコラ オンラインミーティング</h1>
+        
+        <div class="session-info">
+            <strong>開催日時：</strong>令和7年7月25日　午後8時
+        </div>
+
+        <div class="toc">
+            <strong>目次</strong>
+            <ul>
+                <li><a href="#session-record">セッション記録（完全簡潔版）</a></li>
+                <li><a href="#main-theme">メインテーマ：腰痛を通じて見える人生の分岐点</a></li>
+                <li><a href="#polarization">運気の二極化</a></li>
+                <li><a href="#individual-sessions">個別セッション</a></li>
+                <li><a href="#guidance">全体的な指導とアドバイス</a></li>
+            </ul>
+        </div>
+
+        <h2 id="session-record">セッション記録（完全簡潔版）</h2>
+
+        <h2 id="main-theme">メインテーマ</h2>
+        <h3>腰痛を通じて見える人生の分岐点</h3>
+        
+        <div class="info-box">
+            今月の風のスコラのテーマは腰痛。地味だが実は深刻な問題。年末からレリアのパワーが強化され、父性面（他人優先意識）がガタガタに揺さぶられている。人を優先して自分を後回しにするタイプの人に腰痛が増加中。
+        </div>
+
+        <div class="critical-box">
+            <strong>重要な警告</strong><br>
+            浄化力が強い人ほど周囲の人の踏み台にされやすく、無意識レベルで依存エネルギーを引き受けてしまう。腰痛は血流阻害から最終的に癌につながるリスクあり。
+        </div>
+
+        <h2 id="polarization">運気の二極化</h2>
+        
+        <div class="warning-box">
+            <h3><strong>上がる人と下がる人が明確に分かれ始めている</strong></h3>
+            <ul>
+                <li>6月下旬の折り返し以降、変化の兆しが具体化</li>
+                <li>健康だった人ほど危険（依存エネルギーを一気に引き寄せる）</li>
+                <li>何もしていない人の方が安全な場合もある</li>
+            </ul>
+        </div>
+
+        <h2 id="individual-sessions">個別セッション</h2>
+
+        <div class="person-section">
+            <h3>Mさんの症状と対応</h3>
+            
+            <h4>症状の経過</h4>
+            <ul>
+                <li>1週間前のZoomアドバイス後、全身発疹が発生（7/23に収束）</li>
+                <li>仕事休業中、暑さも影響</li>
+                <li>左太ももの激痛→右太ももに移動</li>
+                <li>下半身の重さ、膝下のしびれ</li>
+                <li>阿弥陀如来の浄化ワーク中に重いエネルギーが落ちている実感</li>
+            </ul>
+
+            <h4>根本原因と対策</h4>
+            <div class="danger-box">
+                <strong>逆流現象</strong>：浄化した穢れが空間に留まり体に戻ってくる
+            </div>
+
+            <div class="method-box">
+                <h5><strong>解決法：キャンドルを使用した空間浄化</strong></h5>
+                <ul>
+                    <li>足元ワーク時に体の左右2箇所にキャンドル設置</li>
+                    <li>火で空間を浄化し、穢れを外に押し出す</li>
+                    <li>風通しの良い環境で実行</li>
+                </ul>
+            </div>
+
+            <div class="success-box">
+                <h5><strong>評価</strong></h5>
+                <ul>
+                    <li>体の浄化機能は正常に作動</li>
+                    <li>症状は好転反応として前向きに捉える</li>
+                    <li>重症化時は皮膚科受診も躊躇しない</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="person-section">
+            <h3>Yさんの体験報告</h3>
+            
+            <h4>不可解な現象</h4>
+            <ul>
+                <li>学校（元神社跡地）でお化け屋敷イベント実施後</li>
+                <li>土日に教室の窓が勝手に開閉</li>
+                <li>セコム確認でも原因不明</li>
+                <li>2年前に同じ教室で撮影した写真に異常（子供の頬に別人の目）</li>
+            </ul>
+
+            <div class="info-box">
+                <h4><strong>指導内容</strong></h4>
+                <h5><strong>物理的要因の可能性が高い</strong></h5>
+                <ul>
+                    <li>機械故障、人為的ミス、建物の老朽化など</li>
+                    <li>心霊現象の多くはトリックや錯覚</li>
+                </ul>
+                
+                <h5><strong>対処法</strong></h5>
+                <ul>
+                    <li>不安になるよりも縁起の良いことを実行</li>
+                    <li>必要なら御祓いも選択肢</li>
+                </ul>
+                
+                <h5><strong>心霊写真について</strong></h5>
+                <ul>
+                    <li>デジタル機器では本物は稀</li>
+                    <li>フィルム時代は映りやすかった</li>
+                    <li>オーブ（光の玉）は比較的映りやすい</li>
+                </ul>
+            </div>
+        </div>
+
+        <h2 id="guidance">全体的な指導とアドバイス</h2>
+
+        <div class="spiritual-section">
+            <h3>自然霊との関わり方</h3>
+            
+            <div class="method-box">
+                <h4><strong>写真撮影のコツ</strong></h4>
+                <ul>
+                    <li>四つ葉のクローバーを見つける感覚と同様</li>
+                    <li>キャンドル、ハーブ、お酒を用いた空間作り</li>
+                    <li>歌や踊りで命の喜びを表現→自然霊が集まる</li>
+                    <li>空間の空気を撮影する意識</li>
+                </ul>
+            </div>
+        </div>
+
+        <h3>お祭りとエネルギー</h3>
+        
+        <div class="success-box">
+            <h4><strong>お盆の意味</strong></h4>
+            <ul>
+                <li>土着の祭りに土地の自然霊が参加</li>
+                <li>身近な祭りへの参加推奨</li>
+                <li>子供が楽しんでいる場面で最もエネルギーが活性化</li>
+            </ul>
+        </div>
+
+        <h3>縄文遺跡とパワースポット</h3>
+        
+        <div class="info-box">
+            <h4><strong>エネルギー充電法</strong></h4>
+            <ul>
+                <li>縄文遺跡は発展した文明のパワーが残存</li>
+                <li>江別、千歳周辺に多数存在</li>
+                <li>未発掘の遺跡も多く、潜在的なエネルギー源</li>
+            </ul>
+        </div>
+
+        <h3>実用的なアドバイス</h3>
+        
+        <table class="comparison-table">
+            <thead>
+                <tr>
+                    <th>項目</th>
+                    <th>内容</th>
+                    <th>効果</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>夏の体調管理</strong></td>
+                    <td>スイカの効果</td>
+                    <td>塩分排出、体調調整に有効</td>
+                </tr>
+                <tr>
+                    <td><strong>エアコン問題</strong></td>
+                    <td>設置業者不足の現状</td>
+                    <td>早めの対策が必要</td>
+                </tr>
+                <tr>
+                    <td><strong>エネルギー補給</strong></td>
+                    <td>縄文遺跡訪問</td>
+                    <td>自然エネルギー補給</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>空間感覚の重要性</h3>
+        
+        <div class="success-box">
+            <h4><strong>運気安定のために</strong></h4>
+            <ul>
+                <li>空間エネルギーの濃淡を感じ取る能力育成</li>
+                <li>悪い気配の察知能力向上</li>
+                <li>変な場所や人を避ける直感力強化</li>
+            </ul>
+        </div>
+
+        <h3>研究的視点</h3>
+        
+        <div class="info-box">
+            <h4><strong>心霊現象の科学的アプローチ</strong></h4>
+            <ul>
+                <li>地球周波数の変化により現象も変化</li>
+                <li>先進国では悪魔払い的現象は減少</li>
+                <li>物理現象として検証する姿勢の重要性</li>
+            </ul>
+        </div>
+
+        <blockquote>
+            腰痛は単なる身体症状ではなく、人生の在り方を見直すための重要なサインである。他人優先の父性的価値観から、自分を大切にする母性的価値観への転換が求められている。
+        </blockquote>
+
+        <div class="date-stamp">
+            令和7年7月25日
+        </div>
+    </div>
+</body>
+</html>
